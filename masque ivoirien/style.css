@@ -1,0 +1,113 @@
+/* Styles généraux */
+body {
+    padding-top: 56px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: rgb(255, 254, 254);
+}
+
+/* Hero Section */
+.hero-section {
+    background: linear-gradient(rgba(10, 132, 231, 0.6), rgba(162, 152, 152, 0.6)), url('https://via.placeholder.com/1920x600');
+    background-size: cover;
+    background-position: center;
+    margin-top: -56px;
+    height: 70vh;
+}
+
+/* Tableau des produits */
+.table img {
+    max-width: 100px;
+    height: auto;
+}
+
+.table th {
+    vertical-align: middle;
+}
+
+.table td {
+    vertical-align: middle;
+}
+
+/* Cartes de catégories */
+.category-card {
+    height: 200px;
+    overflow: hidden;
+    position: relative;
+    transition: transform 0.3s;
+}
+
+.category-card:hover {
+    transform: scale(1.03);
+}
+
+.category-card img {
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Boutons */
+.btn-primary {
+    background-color: #8B4513; /* Couleur marron */
+    border-color: #8B4513;
+}
+
+.btn-primary:hover {
+    background-color: #A0522D;
+    border-color: #A0522D;
+}
+
+.btn-outline-primary {
+    color: #8B4513;
+    border-color: #8B4513;
+}
+
+.btn-outline-primary:hover {
+    background-color: #8B4513;
+    border-color: #8B4513;
+    color: white;
+}
+
+/* Section contact */
+#contact {
+    background-color: #f8f9fa;
+}
+
+/* Footer */
+footer {
+    background-color: #343a40;
+}
+
+footer a {
+    text-decoration: none;
+}
+
+.social-icons a {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    transition: all 0.3s;
+}
+
+.social-icons a:hover {
+    background-color: #8B4513;
+    transform: translateY(-3px);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .hero-section {
+        height: 50vh;
+    }
+    
+    .hero-section h1 {
+        font-size: 2.5rem;
+    }
+    
+    .table-responsive {
+        overflow-x: auto;
+    }
+}
