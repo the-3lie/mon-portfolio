@@ -2,6 +2,9 @@
 const burger = document.querySelector('.burger');
 const navLinks = document.querySelector('.nav-links');
 const navLinksLi = document.querySelectorAll('.nav-links li');
+const nom = document.getElementById('nom');
+
+nom.addEventListener('')
 
 burger.addEventListener('click', () => {
     // Toggle Nav
